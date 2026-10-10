@@ -1,0 +1,150 @@
+============================================================
+ Walker 12/12/1 LEO 星座仿真（h=600km, i=55°, 144 颗卫星）
+============================================================
+半长轴 a = 6978.137 km，平均运动 n = 0.00108308 rad/s
+轨道周期 T = 5801.23 s = 96.69 min
+[1/4] 开普勒轨道传播，计算 J2000 ECI 位置...
+[2/4] 星间可见性 / 距离计算，共 1440 个时隙...
+      已完成时隙 200 / 1440
+      已完成时隙 400 / 1440
+      已完成时隙 600 / 1440
+      已完成时隙 800 / 1440
+      已完成时隙 1000 / 1440
+      已完成时隙 1200 / 1440
+      已完成时隙 1400 / 1440
+[3/4] 保存 mat 数据文件...
+      汇总文件: D:\Desktop\WORK\dan\星历\Walker_LEO_EXata\output\walker12121_leo_dataset.mat
+      拆分文件: position_data.mat / visibility_data.mat / range_data.mat
+[4/4] 导出 EXata 轨迹 CSV / mobility trace...
+      D:\Desktop\WORK\dan\星历\Walker_LEO_EXata\output\traces_csv\satellite_positions_eci.csv
+      D:\Desktop\WORK\dan\星历\Walker_LEO_EXata\output\traces_csv\satellite_positions_ecef.csv
+      D:\Desktop\WORK\dan\星历\Walker_LEO_EXata\output\traces_csv\satellite_llh.csv
+      D:\Desktop\WORK\dan\星历\Walker_LEO_EXata\output\traces_csv\exata_mobility_trace_ecef.txt
+      D:\Desktop\WORK\dan\星历\Walker_LEO_EXata\output\traces_csv\traces_per_sat\*.trace（共 144 个单星 trace）
+------------------------------------------------------------
+内置自检：
+  [PASS] 矩阵维度：pos[1440,144,3], vis/range[1440,144,144]
+  [PASS] 地心距离恒为 a=6978.137 km（最大偏差 1.86e-09 m）
+  [PASS] vis/range 对称，对角线 vis=0、range=0
+  [INFO] 星间几何可见临界地心角 = 48.16°（连线与地球相切）
+  [PASS] 同轨相邻星(30°)可见，距离 3612.1 km；隔一颗(60°)不可见
+  [INFO] 首时隙每星可见邻居数：最小 20，最大 25，平均 22.8
+------------------------------------------------------------
+全部完成，总耗时 8.7 s。输出目录：D:\Desktop\WORK\dan\星历\Walker_LEO_EXata\output
+================ 产物独立回读验证 ================
+[PASS] 维度与类型：pos[1440,144,3] double, vis[1440,144,144] logical, range[1440,144,144] double
+[PASS] 所有时刻所有卫星 |r| = 6978.137 km（圆轨道）
+[PASS] 理论轨道周期 5801.23 s = 96.69 min，24h 运行 14.89 圈
+[PASS] 首/中/末时隙：vis/range 对称、对角正确、可见对距离为正
+[PASS] 线段法与夹角解析判据完全一致（临界角 48.16°）
+[PASS] 同轨相邻星：30°可见，距离 3612.1 km（理论 3612.1 km）；隔一颗 60°不可见（6978.1 km）
+[INFO] 每星可见邻居数：全局最小 20、最大 25、平均 22.77
+[INFO] 全网可见链路条数（无向，首时隙）：1644
+[PASS] satellite_positions_eci.csv（9.59 MB）
+[PASS] satellite_positions_ecef.csv（9.59 MB）
+[PASS] satellite_llh.csv（8.58 MB）
+[PASS] exata_mobility_trace_ecef.txt（8.91 MB）
+[PASS] ECI CSV 共 207361 行（1 表头 + 207360 条记录）
+[PASS] 单星 trace 共 144 个；sat_001 首部 "1 1440"，首数据行 "0 1266948.132 6862159.895 0.000"
+================ 全部验证通过 ================
+============================================================
+ Walker 12/12/1 LEO 星座仿真（h=600km, i=55°, 144 颗卫星）
+============================================================
+半长轴 a = 6978.137 km，平均运动 n = 0.00108308 rad/s
+轨道周期 T = 5801.23 s = 96.69 min
+[1/4] 开普勒轨道传播，计算 J2000 ECI 位置...
+[2/4] 星间可见性 / 距离计算，共 1440 个时隙...
+      已完成时隙 200 / 1440
+      已完成时隙 400 / 1440
+      已完成时隙 600 / 1440
+      已完成时隙 800 / 1440
+      已完成时隙 1000 / 1440
+      已完成时隙 1200 / 1440
+      已完成时隙 1400 / 1440
+[3/4] 保存 mat 数据文件...
+      汇总文件: D:\Desktop\WORK\dan\星历\Walker_LEO_EXata\output\walker12121_leo_dataset.mat
+      拆分文件: position_data.mat / visibility_data.mat / range_data.mat
+[4/4] 导出 EXata 轨迹 CSV / mobility trace 与 STK .e 星历...
+      D:\Desktop\WORK\dan\星历\Walker_LEO_EXata\output\traces_csv\satellite_positions_eci.csv
+      D:\Desktop\WORK\dan\星历\Walker_LEO_EXata\output\traces_csv\satellite_positions_ecef.csv
+      D:\Desktop\WORK\dan\星历\Walker_LEO_EXata\output\traces_csv\satellite_llh.csv
+      D:\Desktop\WORK\dan\星历\Walker_LEO_EXata\output\traces_csv\exata_mobility_trace_ecef.txt
+      D:\Desktop\WORK\dan\星历\Walker_LEO_EXata\output\traces_csv\traces_per_sat\*.trace（共 144 个单星 trace）
+{错误使用 compose (第 21 行)
+函数没有定义为支持 'cell' 输入。
+
+出错 export_stk_e (第 34 行)
+ts = compose('%d %s %d %02d:%02d:%06.3f', dy, mon(mo), yr, HH, MM, SS);  % Nt×1
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 walker_leo_main (第 154 行)
+    export_stk_e(pos_data, vel_data, cfg, stkDir);
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+============================================================
+ Walker 12/12/1 LEO 星座仿真（h=600km, i=55°, 144 颗卫星）
+============================================================
+半长轴 a = 6978.137 km，平均运动 n = 0.00108308 rad/s
+轨道周期 T = 5801.23 s = 96.69 min
+[1/4] 开普勒轨道传播，计算 J2000 ECI 位置...
+[2/4] 星间可见性 / 距离计算，共 1440 个时隙...
+      已完成时隙 200 / 1440
+      已完成时隙 400 / 1440
+      已完成时隙 600 / 1440
+      已完成时隙 800 / 1440
+      已完成时隙 1000 / 1440
+      已完成时隙 1200 / 1440
+      已完成时隙 1400 / 1440
+[3/4] 保存 mat 数据文件...
+      汇总文件: D:\Desktop\WORK\dan\星历\Walker_LEO_EXata\output\walker12121_leo_dataset.mat
+      拆分文件: position_data.mat / visibility_data.mat / range_data.mat
+[4/4] 导出 EXata 轨迹 CSV / mobility trace 与 STK .e 星历...
+      D:\Desktop\WORK\dan\星历\Walker_LEO_EXata\output\traces_csv\satellite_positions_eci.csv
+      D:\Desktop\WORK\dan\星历\Walker_LEO_EXata\output\traces_csv\satellite_positions_ecef.csv
+      D:\Desktop\WORK\dan\星历\Walker_LEO_EXata\output\traces_csv\satellite_llh.csv
+      D:\Desktop\WORK\dan\星历\Walker_LEO_EXata\output\traces_csv\exata_mobility_trace_ecef.txt
+      D:\Desktop\WORK\dan\星历\Walker_LEO_EXata\output\traces_csv\traces_per_sat\*.trace（共 144 个单星 trace）
+{错误使用 fprintf
+函数没有定义为支持 'cell' 输入。
+
+出错 export_stk_e (第 59 行)
+    fprintf(fid, '%s\n', lines.');
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 walker_leo_main (第 154 行)
+    export_stk_e(pos_data, vel_data, cfg, stkDir);
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+============================================================
+ Walker 12/12/1 LEO 星座仿真（h=600km, i=55°, 144 颗卫星）
+============================================================
+半长轴 a = 6978.137 km，平均运动 n = 0.00108308 rad/s
+轨道周期 T = 5801.23 s = 96.69 min
+[1/4] 开普勒轨道传播，计算 J2000 ECI 位置...
+[2/4] 星间可见性 / 距离计算，共 1440 个时隙...
+      已完成时隙 200 / 1440
+      已完成时隙 400 / 1440
+      已完成时隙 600 / 1440
+      已完成时隙 800 / 1440
+      已完成时隙 1000 / 1440
+      已完成时隙 1200 / 1440
+      已完成时隙 1400 / 1440
+[3/4] 保存 mat 数据文件...
+      汇总文件: D:\Desktop\WORK\dan\星历\Walker_LEO_EXata\output\walker12121_leo_dataset.mat
+      拆分文件: position_data.mat / visibility_data.mat / range_data.mat
+[4/4] 导出 EXata 轨迹 CSV / mobility trace 与 STK .e 星历...
+      D:\Desktop\WORK\dan\星历\Walker_LEO_EXata\output\traces_csv\satellite_positions_eci.csv
+      D:\Desktop\WORK\dan\星历\Walker_LEO_EXata\output\traces_csv\satellite_positions_ecef.csv
+      D:\Desktop\WORK\dan\星历\Walker_LEO_EXata\output\traces_csv\satellite_llh.csv
+      D:\Desktop\WORK\dan\星历\Walker_LEO_EXata\output\traces_csv\exata_mobility_trace_ecef.txt
+      D:\Desktop\WORK\dan\星历\Walker_LEO_EXata\output\traces_csv\traces_per_sat\*.trace（共 144 个单星 trace）
+      D:\Desktop\WORK\dan\星历\Walker_LEO_EXata\output\stk_ephemeris\sat_001.e … sat_144.e（共 144 个 STK .e 星历，单位 km、km/s）
+------------------------------------------------------------
+内置自检：
+  [PASS] 矩阵维度：pos[1440,144,3], vis/range[1440,144,144]
+  [PASS] 地心距离恒为 a=6978.137 km（最大偏差 1.86e-09 m）
+  [PASS] 速度模长恒为 7557.865 m/s（最大偏差 3.64e-12 m/s）
+  [PASS] vis/range 对称，对角线 vis=0、range=0
+  [INFO] 星间几何可见临界地心角 = 48.16°（连线与地球相切）
+  [PASS] 同轨相邻星(30°)可见，距离 3612.1 km；隔一颗(60°)不可见
+  [INFO] 首时隙每星可见邻居数：最小 20，最大 25，平均 22.8
+------------------------------------------------------------
+全部完成，总耗时 12.0 s。输出目录：D:\Desktop\WORK\dan\星历\Walker_LEO_EXata\output
